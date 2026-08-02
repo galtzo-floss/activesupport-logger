@@ -64,6 +64,6 @@ module ActiveSupport
   end
 end
 
-ActiveSupport::Version.class_eval do
+Activesupport::Logger::Version.class_eval do
   extend VersionGem::Basic
 end

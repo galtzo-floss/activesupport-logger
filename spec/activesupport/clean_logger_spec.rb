@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "active_support/logger"
+
 RSpec.describe ActiveSupport::Logger do
   before do
     @out = StringIO.new
