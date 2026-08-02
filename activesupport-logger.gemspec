@@ -82,13 +82,13 @@ Gem::Specification.new do |spec|
 
   # Specify which files are part of the released package.
   spec.files = [
-    *enumerate_package_glob.call(File.join(gemspec_root, "LICENSE.txt")),
     # Root package metadata
     *package_metadata_files,
     # Code / tasks / data (NOTE: exe/ is specified via spec.bindir and spec.executables below)
     *enumerate_package_files.call("lib"),
     # Executables and executable support scripts
-    *enumerate_package_files.call("exe")
+    *enumerate_package_files.call("exe"),
+    *enumerate_package_glob.call(File.join(gemspec_root, "LICENSE.txt"))
   ]
   spec.rdoc_options += [
     "--title",
@@ -163,15 +163,15 @@ Gem::Specification.new do |spec|
   # See: https://github.com/vcr/vcr/issues/1057
   # spec.add_development_dependency("vcr", ">= 4")                        # 6.0 claims to support ruby >= 2.3, but fails on ruby 2.4
   # spec.add_development_dependency("webmock", ">= 3")                    # Last version to support ruby >= 2.3
-  spec.add_development_dependency("rdoc", "~> 6.8", ">= 6.8.1")
-  spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.37")
   spec.add_development_dependency("activesupport-broadcast_logger", "~> 2.0", ">= 2.0.2")
   spec.add_development_dependency("appraisal", "~> 2.5")
   spec.add_development_dependency("minitest", "~> 5.25", ">= 5.25.1")
+  spec.add_development_dependency("rdoc", "~> 6.8", ">= 6.8.1")
   spec.add_development_dependency("rspec", "~> 3.13")
   spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.6")
   spec.add_development_dependency("rspec-pending_for", "~> 0.1", ">= 0.1.16")
-  spec.add_development_dependency("test-unit", "~> 3.6", ">= 3.6.2")
   spec.add_development_dependency("rubocop-lts", "~> 18.2", ">= 18.2.1") # Lint & Style Support for Ruby 2.7+
   spec.add_development_dependency("rubocop-packaging", "~> 0.5", ">= 0.5.2")
+  spec.add_development_dependency("test-unit", "~> 3.6", ">= 3.6.2")
+  spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.37")
 end

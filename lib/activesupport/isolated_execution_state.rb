@@ -13,7 +13,7 @@ module ActiveSupport
       def isolation_level=(level)
         return if level == @isolation_level
 
-        unless %i(thread fiber).include?(level)
+        unless %i[thread fiber].include?(level)
           raise ArgumentError, "isolation_level must be `:thread` or `:fiber`, got: `#{level.inspect}`"
         end
 

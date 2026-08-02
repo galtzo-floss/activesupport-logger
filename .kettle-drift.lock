@@ -1,78 +1,11 @@
 {
-  "#   - Ruby 2.7\n#   - Ruby 3.0": [
-    {
-      "file": "Appraisals",
-      "lines": [
-        136,
-        144,
-        153
-      ]
-    }
-  ],
-  "#   - Ruby 3.0\n#   - Ruby 3.1": [
-    {
-      "file": "Appraisals",
-      "lines": [
-        145,
-        154
-      ]
-    }
-  ],
-  "#   - Ruby 3.1\n#   - Ruby 3.2": [
-    {
-      "file": "Appraisals",
-      "lines": [
-        155,
-        163
-      ]
-    }
-  ],
-  "#   - Ruby 3.2\n#   - Ruby 3.3": [
-    {
-      "file": "Appraisals",
-      "lines": [
-        164,
-        172
-      ]
-    }
-  ],
-  "# Compat: Ruby >= 2.5\n# Test Matrix:": [
-    {
-      "file": "Appraisals",
-      "lines": [
-        127,
-        134
-      ]
-    }
-  ],
-  "# Compat: Ruby >= 2.7\n# Test Matrix:": [
-    {
-      "file": "Appraisals",
-      "lines": [
-        142,
-        151
-      ]
-    }
-  ],
-  "# Test Matrix:\n#   - Ruby 2.7": [
-    {
-      "file": "Appraisals",
-      "lines": [
-        121,
-        128,
-        135,
-        143,
-        152
-      ]
-    }
-  ],
   "- 44.83% documented\n### Added": [
     {
       "file": "CHANGELOG.md",
       "lines": [
-        104,
-        113,
-        123
+        107,
+        116,
+        126
       ]
     }
   ]
