@@ -5,7 +5,7 @@
     [22, 9, 6, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 2771743759],
     [28, 9, 16, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 430180392]
   ],
-  "lib/activesupport/logger.rb:1883514405": [
+  "lib/activesupport/logger.rb:885373809": [
     [57, 5, 3, "Lint/IneffectiveAccessModifier: `private` (on line 55) does not make singleton methods private. Use `private_class_method` or `private` inside a `class << self` block instead.", 193404514]
   ],
   "lib/activesupport/logger_silence.rb:1739415277": [
@@ -15,9 +15,9 @@
     [17, 7, 12, "Lint/EmptyWhen: Avoid `when` branches without a body.", 2262258615],
     [20, 7, 8, "Lint/EmptyWhen: Avoid `when` branches without a body.", 2691696058]
   ],
-  "spec/activesupport/clean_logger_spec.rb:919999295": [
-    [3, 1, 36, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/logger*_spec.rb`.", 2349951270],
-    [6, 15, 21, "RSpec/DescribedClass: Use `described_class` instead of `ActiveSupport::Logger`.", 2155992370]
+  "spec/activesupport/clean_logger_spec.rb:2400561397": [
+    [5, 1, 36, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/logger*_spec.rb`.", 2349951270],
+    [8, 15, 21, "RSpec/DescribedClass: Use `described_class` instead of `ActiveSupport::Logger`.", 2155992370]
   ],
   "spec/activesupport/isolated_execution_state_spec.rb:1017146217": [
     [5, 1, 52, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/isolated_execution_state*_spec.rb`.", 2500898234],
