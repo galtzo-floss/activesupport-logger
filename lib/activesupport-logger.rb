@@ -45,6 +45,6 @@ require_relative "activesupport/logger/version"
 module Activesupport
 end
 
-Activesupport::Logger::Version.class_eval do
+ActiveSupport::Version.class_eval do
   extend VersionGem::Basic
 end
