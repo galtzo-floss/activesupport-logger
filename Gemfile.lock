@@ -10,14 +10,6 @@ PATH
       version_gem (~> 1.1, >= 1.1.15)
 
 PATH
-  remote: /home/pboling/src/my/galtzo-floss/turbo_tests2
-  specs:
-    turbo_tests2 (3.2.4)
-      parallel_tests (>= 3.3.0, < 6)
-      rspec (>= 3.10)
-      version_gem (~> 1.1, >= 1.1.15)
-
-PATH
   remote: /home/pboling/src/my/galtzo-floss/yard-fence
   specs:
     yard-fence (0.9.7)
@@ -37,35 +29,6 @@ PATH
     yard-yaml (0.2.4)
       version_gem (~> 1.1, >= 1.1.15)
       yaml-converter (~> 0.2)
-
-PATH
-  remote: /home/pboling/src/my/kettle-dev/kettle-dev
-  specs:
-    kettle-dev (2.5.18)
-      emoji_regex (>= 15.0)
-      kettle-gha-pins (~> 0.3, >= 0.3.5)
-      kettle-ndjson (~> 0.1, >= 0.1.10)
-      kettle-rb (~> 0.1, >= 0.1.8)
-      kettle-test (~> 2.0, >= 2.0.18)
-      ruby-progressbar (~> 1.13)
-      tty-progressbar (~> 0.18)
-
-PATH
-  remote: /home/pboling/src/my/kettle-dev/kettle-drift
-  specs:
-    kettle-drift (1.0.11)
-      version_gem (~> 1.1, >= 1.1.15)
-
-PATH
-  remote: /home/pboling/src/my/kettle-dev/kettle-soup-cover
-  specs:
-    kettle-soup-cover (3.0.9)
-      kettle-wash (~> 0.1, >= 0.1.3)
-      simplecov (>= 1.0)
-      simplecov-cobertura (>= 4.0)
-      simplecov-console (~> 0.9, >= 0.9.5)
-      simplecov-rcov (~> 0.3, >= 0.3.7)
-      simplecov_lcov_formatter (~> 0.9, >= 0.9.0)
 
 PATH
   remote: /home/pboling/src/my/structuredmerge/ruby/gems/ast-crispr-markdown-markly
@@ -464,6 +427,16 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.21.2)
+    kettle-dev (2.5.18)
+      emoji_regex (>= 15.0)
+      kettle-gha-pins (~> 0.3, >= 0.3.5)
+      kettle-ndjson (~> 0.1, >= 0.1.10)
+      kettle-rb (~> 0.1, >= 0.1.8)
+      kettle-test (~> 2.0, >= 2.0.18)
+      ruby-progressbar (~> 1.13)
+      tty-progressbar (~> 0.18)
+    kettle-drift (1.0.11)
+      version_gem (~> 1.1, >= 1.1.15)
     kettle-family (1.2.23)
       command_kit (~> 0.6)
       command_kit-completion (~> 0.1)
@@ -478,6 +451,13 @@ GEM
     kettle-ndjson (0.1.10)
       version_gem (~> 1.1, >= 1.1.14)
     kettle-rb (0.1.8)
+    kettle-soup-cover (3.0.9)
+      kettle-wash (~> 0.1, >= 0.1.3)
+      simplecov (>= 1.0)
+      simplecov-cobertura (>= 4.0)
+      simplecov-console (~> 0.9, >= 0.9.5)
+      simplecov-rcov (~> 0.3, >= 0.3.7)
+      simplecov_lcov_formatter (~> 0.9, >= 0.9.0)
     kettle-test (2.0.19)
       appraisal2 (~> 3.0, >= 3.0.6)
       backports (~> 3.0)
@@ -733,6 +713,10 @@ GEM
       tty-screen (~> 0.8)
       unicode-display_width (>= 1.6, < 3.0)
     tty-screen (0.8.2)
+    turbo_tests2 (3.2.4)
+      parallel_tests (>= 3.3.0, < 6)
+      rspec (>= 3.10)
+      version_gem (~> 1.1, >= 1.1.14)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.6.0)
@@ -790,11 +774,11 @@ DEPENDENCIES
   go-merge!
   irb (~> 1.17)
   json-merge!
-  kettle-dev (~> 2.5, >= 2.5.17, >= 0)!
-  kettle-drift!
+  kettle-dev (~> 2.5, >= 2.5.17)
+  kettle-drift (~> 1.0, >= 1.0.11)
   kettle-family (~> 1.2, >= 1.2.23)
   kettle-jem!
-  kettle-soup-cover!
+  kettle-soup-cover (~> 3.0, >= 3.0.9)
   kettle-test (~> 2.0, >= 2.0.19)
   kramdown (~> 2.5, >= 2.5.2)
   kramdown-merge!
@@ -833,7 +817,7 @@ DEPENDENCIES
   test-unit (~> 3.6, >= 3.6.2)
   toml-merge!
   tree_haver!
-  turbo_tests2 (~> 3.2, >= 3.2.4, >= 0)!
+  turbo_tests2 (~> 3.2, >= 3.2.4)
   typescript-merge!
   webrick (~> 1.9)
   yaml-converter (~> 0.2, >= 0.2.4)
