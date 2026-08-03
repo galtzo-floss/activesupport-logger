@@ -90,6 +90,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260802-001 - Devcontainer JSON files now merge as JSONC,
   preserving comments and trailing commas during template updates.
 
+- Preserve the Activesupport::Logger version namespace when loading beside Rails
+
 ### Security
 
 ## [2.0.3] - 2024-11-22

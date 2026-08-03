@@ -41,10 +41,6 @@ require_relative "activesupport/logger_silence"
 require_relative "activesupport/logger"
 require_relative "activesupport/logger/version"
 
-# Namespace for the Version of this gem (and nothing else)
-module Activesupport
-end
-
-ActiveSupport::Version.class_eval do
+Activesupport::Logger::Version.class_eval do
   extend VersionGem::Basic
 end
