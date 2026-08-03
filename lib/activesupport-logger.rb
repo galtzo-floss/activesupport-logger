@@ -7,7 +7,6 @@ require "version_gem"
 require "backports/3.1.0/array/intersect"
 
 # This library
-require_relative "activesupport/logger/version"
 
 # Original from whatever version of Rails / ActiveSupport is loaded...
 require "active_support/concern"
@@ -40,6 +39,7 @@ require_relative "activesupport/logger_silence"
 # Compare SHA with latest commit to check for changes:
 # https://github.com/rails/rails/blob/main/activesupport/lib/active_support/logger.rb
 require_relative "activesupport/logger"
+require_relative "activesupport/logger/version"
 
 # Namespace for the Version of this gem (and nothing else)
 module Activesupport

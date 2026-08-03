@@ -6,8 +6,6 @@ require "logger"
 # Extracted from Rails v8.0
 require_relative "logger_silence"
 require_relative "logger_thread_safe_level"
-require "version_gem"
-require_relative "logger/version"
 
 module ActiveSupport
   class Logger < ::Logger
@@ -62,8 +60,4 @@ module ActiveSupport
       end
     end
   end
-end
-
-Activesupport::Logger::Version.class_eval do
-  extend VersionGem::Basic
 end
