@@ -2,7 +2,7 @@
 
 module Activesupport
   module Logger
-  # Version namespace for this gem.
+    # Version namespace for this gem.
     module Version
       # Current gem version.
       VERSION = "2.0.3"
