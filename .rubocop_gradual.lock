@@ -35,22 +35,21 @@
     [4, 3, 70, "Lint/ConstantDefinitionInBlock: Do not define constants this way within a block.", 2849072819],
     [4, 3, 70, "RSpec/LeakyConstantDeclaration: Stub class constant instead of declaring explicitly.", 2849072819]
   ],
-  "spec/activesupport/logger_spec.rb:649226183": [
-    [11, 1, 36, "RSpec/MultipleDescribes: Do not use multiple top-level example groups - try to nest them.", 4074881734],
-    [28, 41, 2, "RSpec/BeEq: Prefer `be` over `eq`.", 5860785],
-    [33, 65, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
-    [35, 60, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
-    [36, 60, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
-    [36, 68, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
-    [42, 69, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
-    [44, 55, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
-    [51, 59, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
-    [53, 45, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
-    [54, 55, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
-    [65, 59, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
-    [161, 3, 220, "RSpec/NoExpectationExample: No expectation found in this example.", 2483096172],
-    [174, 3, 344, "RSpec/NoExpectationExample: No expectation found in this example.", 4268698866],
-    [282, 9, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
-    [305, 7, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361]
+  "spec/activesupport/logger_spec.rb:1290926973": [
+    [24, 41, 2, "RSpec/BeEq: Prefer `be` over `eq`.", 5860785],
+    [29, 65, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
+    [31, 60, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
+    [32, 60, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
+    [32, 68, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
+    [38, 69, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
+    [40, 55, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
+    [47, 59, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
+    [49, 45, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
+    [50, 55, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
+    [61, 59, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
+    [157, 3, 220, "RSpec/NoExpectationExample: No expectation found in this example.", 2483096172],
+    [170, 3, 344, "RSpec/NoExpectationExample: No expectation found in this example.", 4268698866],
+    [278, 9, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
+    [301, 7, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361]
   ]
 }

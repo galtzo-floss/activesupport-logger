@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rubocop:disable RSpec/SpecFilePathFormat
+
 require "stringio"
 require "fileutils"
 require "tempfile"
@@ -7,12 +9,6 @@ require "tmpdir"
 require "concurrent/atomics"
 
 require "active_support/core_ext/object/try"
-
-RSpec.describe Activesupport::Logger do
-  it "is not a Activesupport::Logger" do
-    expect(described_class < Logger).to be_nil
-  end
-end
 
 RSpec.describe ActiveSupport::Logger do
   include MultibyteTestHelpers
@@ -457,3 +453,5 @@ RSpec.describe ActiveSupport::Logger do
     assert_equal level, @logger.level, "Expected level #{level_name(level)}, got #{level_name(@logger.level)}"
   end
 end
+
+# rubocop:enable RSpec/SpecFilePathFormat

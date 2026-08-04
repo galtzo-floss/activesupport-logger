@@ -92,6 +92,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Preserve the Activesupport::Logger version namespace when loading beside Rails
 
+- Restore ActiveSupport logger version namespaces after templating.
+
 ### Security
 
 ## [2.0.3] - 2024-11-22
