@@ -628,7 +628,7 @@ files:
   CHANGELOG.md:
     recipe: template_source_application_CHANGELOG_md
     action: write
-    dest_sha256: ec92e60ecd322c072539dc138dd452666b5b97c0629876b520a2932e15a550d4
+    dest_sha256: 191926e16023d7ae5dc2944bb7f3e601f00575e601b645fe315793bf164b4fe5
     input_fingerprint: 0f516be433119d8d2bbc54d28e21bf4721f2b211352ee33ee5f8f2d9ebb57ce9
     template_sources:
     - CHANGELOG.md.example
@@ -1048,7 +1048,7 @@ files:
   sig/activesupport/logger.rbs:
     recipe: template_source_application_sig_activesupport_logger_rbs
     action: write
-    dest_sha256: b99883ead1a54e1a988604ab73078b85567540194903f96d57caf8c2bbed2708
+    dest_sha256: 3b40f431c68c6b430940245c2cc583e43fc1a51aca8617169d830caf3d2e978c
     input_fingerprint: a8e014f1ea41a4b0dc4a3cd8a18f5033c013fa073efa78ac9d34217a7ec25318
     template_sources:
     - sig/gem.rbs.example
