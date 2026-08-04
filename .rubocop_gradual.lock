@@ -1,4 +1,7 @@
 {
+  "gemfiles/modular/templating.gemfile:3018447732": [
+    [14, 3, 47, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 10 of the Gemfile.", 3843603197]
+  ],
   "lib/activesupport/isolated_execution_state.rb:2454238027": [
     [14, 28, 16, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 430180392],
     [20, 18, 16, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 430180392],
@@ -23,6 +26,9 @@
     [5, 1, 52, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/isolated_execution_state*_spec.rb`.", 2500898234],
     [26, 16, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
     [39, 16, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361]
+  ],
+  "spec/activesupport/logger/version_spec.rb:3968636878": [
+    [3, 1, 62, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/logger/simple_formatter/version*_spec.rb`.", 2471459858]
   ],
   "spec/activesupport/logger_silence_spec.rb:298610873": [
     [3, 1, 43, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/logger_silence*_spec.rb`.", 1277887133],
