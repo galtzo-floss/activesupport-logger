@@ -21,6 +21,10 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 
 ## 🌻 Synopsis <a href="https://discord.gg/3qme4XHNKN"><img alt="Galtzo FLOSS Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/galtzo-floss/avatar-128px.svg" width="8%" align="right"/></a> <a href="https://ruby-toolbox.com"><img alt="ruby-lang Logo, Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5" src="https://logos.galtzo.com/assets/images/ruby-lang/avatar-128px.svg" width="8%" align="right"/></a>
 
+Backports the Rails 8 `ActiveSupport::Logger` implementation, including its
+thread-local log levels, source normalization, and formatter behavior, to older
+supported Rails and Ruby versions.
+
 ## 💡 Info you can shake a stick at
 
 | Tokens to Remember | [![Gem name][⛳️name-img]][⛳️gem-name] [![Gem namespace][⛳️namespace-img]][⛳️gem-namespace] |
@@ -118,6 +122,11 @@ gem install activesupport-logger
 ```
 
 ## ⚙️ Configuration
+
+Use the normal `ActiveSupport::Logger` constructor and Rails logger settings.
+This gem does not add an application-specific configuration file and should
+normally be loaded indirectly through `activesupport-tagged_logging` or
+`activesupport-broadcast_logger` so their required load order is preserved.
 
 ## 🔧 Basic Usage
 
