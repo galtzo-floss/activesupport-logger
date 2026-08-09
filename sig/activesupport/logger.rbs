@@ -14,16 +14,9 @@ module ActiveSupport
   end
   VERSION: String
   module Logger
-    module SimpleFormatter
-      module Version
-        VERSION: String
-      end
-      VERSION: String
-    end
+  end
 
-    module Version
-      VERSION: String
-    end
+  module LoggerVersion
     VERSION: String
   end
 end

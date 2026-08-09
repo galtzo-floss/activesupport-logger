@@ -1,7 +1,10 @@
 require "anonymous_loader"
 require "logger"
 require "activesupport-logger"
-RSpec.describe ActiveSupport::Logger::SimpleFormatter::Version do
+# The version spec remains beside the historical runtime path while exercising
+# the standalone gemspec version namespace.
+# rubocop:disable RSpec/SpecFilePathFormat
+RSpec.describe ActiveSupport::LoggerVersion do
   it_behaves_like "a Version module", described_class
 
   it "executes the version file for coverage without redefining constants" do
@@ -13,9 +16,5 @@ RSpec.describe ActiveSupport::Logger::SimpleFormatter::Version do
 
     expect(anonymous_namespace::ActiveSupport::LoggerVersion::VERSION).to eq(described_class::VERSION)
   end
-
-  it "re-exports the standalone version module at the public constant" do
-    expect(described_class).to be(ActiveSupport::LoggerVersion)
-    expect(described_class::VERSION).to eq(ActiveSupport::LoggerVersion::VERSION)
-  end
 end
+# rubocop:enable RSpec/SpecFilePathFormat
