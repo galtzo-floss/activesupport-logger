@@ -28,8 +28,6 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
-- Synchronize LICENSE copyright years with README.md for release validation.
-
 ### Security
 
 ## [2.0.4] - 2026-08-08
@@ -112,6 +110,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - Restore ActiveSupport logger version namespaces after templating.
 
 - Fix cross-gem README Markdown references before release.
+
+- Synchronize LICENSE copyright years with README.md for release validation.
 
 ## [2.0.3] - 2024-11-22
 
