@@ -6,16 +6,13 @@
 # kettle-jem will then preserve content between those markers across template runs.
 # kettle-jem:unfreeze
 
-gem_version =
-  if Gem.ruby_version >= Gem::Version.new("3.1")
-    # Loading Version into an anonymous module allows version.rb to get code coverage from SimpleCov!
-    # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-2630782358
-    # See: https://github.com/panorama-ed/memo_wise/pull/397
-    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/activesupport/logger/version.rb", mod) }::ActiveSupport::Logger::SimpleFormatter::Version::VERSION
-  else
-    require_relative "lib/activesupport/logger/version"
-    ActiveSupport::Logger::SimpleFormatter::Version::VERSION
-  end
+# Loading Version into an anonymous module avoids polluting the global
+# namespace before runtime dependencies are installed on older Rubies too.
+# See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-2630782358
+# See: https://github.com/panorama-ed/memo_wise/pull/397
+gem_version = Module.new.tap do |mod|
+  Kernel.load("#{__dir__}/lib/activesupport/logger/version.rb", mod)
+end::ActiveSupport::Logger::SimpleFormatter::Version::VERSION
 
 Gem::Specification.new do |spec|
   spec.name = "activesupport-logger"
