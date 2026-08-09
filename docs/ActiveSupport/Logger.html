@@ -159,29 +159,6 @@
 </li>
 
       
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#normalize_sources-class_method" title="normalize_sources (class method)">.<strong>normalize_sources</strong>(sources)  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-</div></span>
-  
-</li>
-
-      
     </ul>
     
   
@@ -263,13 +240,13 @@
       <pre class="lines">
 
 
-40
-41
-42
-43</pre>
+45
+46
+47
+48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/activesupport/logger.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/activesupport/logger.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_kwargs'>kwargs</span><span class='rparen'>)</span>
   <span class='kw'>super</span>
@@ -333,11 +310,6 @@
       <pre class="lines">
 
 
-23
-24
-25
-26
-27
 28
 29
 30
@@ -348,10 +320,15 @@
 35
 36
 37
-38</pre>
+38
+39
+40
+41
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/activesupport/logger.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'lib/activesupport/logger.rb', line 28</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_logger_outputs_to?'>logger_outputs_to?</span><span class='lparen'>(</span><span class='id identifier rubyid_logger'>logger</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_sources'>sources</span><span class='rparen'>)</span>
   <span class='comment'># NOTE: This is the only line altered for this gem.
@@ -368,44 +345,6 @@
   <span class='id identifier rubyid_logger_sources'>logger_sources</span> <span class='op'>=</span> <span class='id identifier rubyid_logdevs'>logdevs</span><span class='period'>.</span><span class='id identifier rubyid_filter_map'>filter_map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_logdev'>logdev</span><span class='op'>|</span> <span class='id identifier rubyid_logdev'>logdev</span><span class='period'>.</span><span class='id identifier rubyid_try'>try</span><span class='lparen'>(</span><span class='symbol'>:filename</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='id identifier rubyid_logdev'>logdev</span><span class='period'>.</span><span class='id identifier rubyid_try'>try</span><span class='lparen'>(</span><span class='symbol'>:dev</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
 
   <span class='id identifier rubyid_normalize_sources'>normalize_sources</span><span class='lparen'>(</span><span class='id identifier rubyid_sources'>sources</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_intersect?'>intersect?</span><span class='lparen'>(</span><span class='id identifier rubyid_normalize_sources'>normalize_sources</span><span class='lparen'>(</span><span class='id identifier rubyid_logger_sources'>logger_sources</span><span class='rparen'>)</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="normalize_sources-class_method">
-  
-    .<strong>normalize_sources</strong>(sources)  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-55
-56
-57
-58
-59
-60
-61</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/activesupport/logger.rb', line 55</span>
-
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_normalize_sources'>normalize_sources</span><span class='lparen'>(</span><span class='id identifier rubyid_sources'>sources</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_sources'>sources</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_source'>source</span><span class='op'>|</span>
-    <span class='id identifier rubyid_source'>source</span> <span class='op'>=</span> <span class='id identifier rubyid_source'>source</span><span class='period'>.</span><span class='id identifier rubyid_path'>path</span> <span class='kw'>if</span> <span class='id identifier rubyid_source'>source</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:path</span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_source'>source</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_realpath'>realpath</span><span class='lparen'>(</span><span class='id identifier rubyid_source'>source</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_source'>source</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_exist?'>exist?</span><span class='lparen'>(</span><span class='id identifier rubyid_source'>source</span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_source'>source</span>
-  <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>

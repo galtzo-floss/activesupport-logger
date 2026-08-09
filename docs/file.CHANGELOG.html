@@ -70,7 +70,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 and <a href="https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html">yes</a>, platform and engine support are part of the <a href="https://github.com/semver/semver/issues/716#issuecomment-869336139">public API</a>.<br>
 Please file a bug if you notice a violation of semantic versioning.</p>
 
-<h2 id="unreleased"><a href="https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.4...HEAD">Unreleased</a></h2>
+<h2 id="unreleased"><a href="https://github.com/galtzo-floss/activesupport-logger/compare/v3.0.0...HEAD">Unreleased</a></h2>
 
 <h3 id="added">Added</h3>
 
@@ -83,6 +83,46 @@ Please file a bug if you notice a violation of semantic versioning.</p>
 <h3 id="fixed">Fixed</h3>
 
 <h3 id="security">Security</h3>
+
+<h2 id="300---2026-08-09">
+<a href="https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.4...v3.0.0">3.0.0</a> - 2026-08-09</h2>
+
+<ul>
+  <li>TAG: <a href="https://github.com/galtzo-floss/activesupport-logger/releases/tag/v3.0.0">v3.0.0</a>
+</li>
+  <li>COVERAGE: 96.00% – 120/125 lines in 7 files</li>
+  <li>BRANCH COVERAGE: 86.21% – 25/29 branches in 7 files</li>
+  <li>53.57% documented</li>
+</ul>
+
+<h3 id="changed-1">Changed</h3>
+
+<ul>
+  <li>Drop support for Ruby versions older than 3.1 and use the modern gemspec version-loading pattern.</li>
+</ul>
+
+<h3 id="fixed-1">Fixed</h3>
+
+<ul>
+  <li>
+    <p>Fix Active Support logger loading across Ruby versions by preserving the active_support/logger feature path.</p>
+  </li>
+  <li>
+    <p>Fix Ruby 2.7 and 3.0 Active Support logger load-order compatibility.</p>
+  </li>
+  <li>
+    <p>Load Logger before evaluating the gemspec version namespace.</p>
+  </li>
+  <li>
+    <p>Load the gemspec version before runtime dependencies are installed.</p>
+  </li>
+  <li>
+    <p>Preserve thread-isolated execution state across enumerators on JRuby.</p>
+  </li>
+  <li>
+    <p>Restore cross-gem README links for the Active Support logging family.</p>
+  </li>
+</ul>
 
 <h2 id="204---2026-08-08">
 <a href="https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.3...v2.0.4">2.0.4</a> - 2026-08-08</h2>
@@ -107,7 +147,7 @@ before generated docs are refreshed.</li>
 RSpec helpers provided by <code>kettle-test</code>.</li>
 </ul>
 
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 
 <ul>
   <li>kettle-jem-template-20260716-002 - Gemspecs now ship fewer repository-only<br>
@@ -124,7 +164,7 @@ installing the main Gemfile bundle.</li>
 use ClickGems instead of BestGems.</li>
 </ul>
 
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="fixed-2">Fixed</h3>
 
 <ul>
   <li>kettle-jem-template-20260720-003 - StructuredMerge Git diff driver config now<br>
@@ -197,7 +237,7 @@ preserving comments and trailing commas during template updates.</p>
   <li>rdoc as runtime dependency</li>
 </ul>
 
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 
 <ul>
   <li>upgrade activesupport-broadcast_logger v2.0.2</li>
@@ -217,7 +257,7 @@ preserving comments and trailing commas during template updates.</p>
   <li>rdoc as development dependency</li>
 </ul>
 
-<h3 id="changed-3">Changed</h3>
+<h3 id="changed-4">Changed</h3>
 
 <ul>
   <li>upgrade activesupport-broadcast_logger v2.0.1</li>
@@ -237,7 +277,7 @@ preserving comments and trailing commas during template updates.</p>
   <li>More tests lifted from Rails v8.0 test suite</li>
 </ul>
 
-<h3 id="fixed-2">Fixed</h3>
+<h3 id="fixed-3">Fixed</h3>
 
 <ul>
   <li>Compatibility with ActiveSupport
@@ -264,7 +304,7 @@ preserving comments and trailing commas during template updates.</p>
   <li><code>ActiveSupport::IsolatedExecutionState</code></li>
 </ul>
 
-<h3 id="changed-4">Changed</h3>
+<h3 id="changed-5">Changed</h3>
 
 <ul>
   <li>Now loads even in Rails 8
@@ -274,7 +314,7 @@ preserving comments and trailing commas during template updates.</p>
   </li>
 </ul>
 
-<h3 id="fixed-3">Fixed</h3>
+<h3 id="fixed-4">Fixed</h3>
 
 <ul>
   <li>Compatibility with Rails &gt; v5.2 and &lt; v7.1
@@ -292,7 +332,7 @@ preserving comments and trailing commas during template updates.</p>
   <li>55.56% documented</li>
 </ul>
 
-<h3 id="fixed-4">Fixed</h3>
+<h3 id="fixed-5">Fixed</h3>
 
 <ul>
   <li>Typo in internal file name (non-breaking, just annoying/confusing)</li>

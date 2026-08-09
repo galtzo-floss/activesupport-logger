@@ -763,7 +763,7 @@
   <span class='comment'># Action Controller streaming spawns a new thread and copy thread locals.
 </span>  <span class='comment'># We do the same here for backward compatibility, but this is very much a hack
 </span>  <span class='comment'># and streaming should be rethought.
-</span>  <span class='id identifier rubyid_context'>context</span><span class='period'>.</span><span class='id identifier rubyid_active_support_execution_state'>active_support_execution_state</span> <span class='op'>=</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_active_support_execution_state'>active_support_execution_state</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span>
+</span>  <span class='id identifier rubyid_set_state'>set_state</span><span class='lparen'>(</span><span class='id identifier rubyid_context'>context</span><span class='comma'>,</span> <span class='id identifier rubyid_state_for'>state_for</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>

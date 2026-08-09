@@ -22,11 +22,24 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
-- Drop support for Ruby versions older than 3.1 and use the modern gemspec version-loading pattern.
-
 ### Deprecated
 
 ### Removed
+
+### Fixed
+
+### Security
+
+## [3.0.0] - 2026-08-09
+
+- TAG: [v3.0.0][3.0.0t]
+- COVERAGE: 96.00% -- 120/125 lines in 7 files
+- BRANCH COVERAGE: 86.21% -- 25/29 branches in 7 files
+- 53.57% documented
+
+### Changed
+
+- Drop support for Ruby versions older than 3.1 and use the modern gemspec version-loading pattern.
 
 ### Fixed
 
@@ -41,8 +54,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - Preserve thread-isolated execution state across enumerators on JRuby.
 
 - Restore cross-gem README links for the Active Support logging family.
-
-### Security
 
 ## [2.0.4] - 2026-08-08
 
@@ -212,6 +223,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Initial release
 
-[Unreleased]: https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.4...HEAD
+[Unreleased]: https://github.com/galtzo-floss/activesupport-logger/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.4...v3.0.0
+[3.0.0t]: https://github.com/galtzo-floss/activesupport-logger/releases/tag/v3.0.0
 [2.0.4]: https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.3...v2.0.4
 [2.0.4t]: https://github.com/galtzo-floss/activesupport-logger/releases/tag/v2.0.4
