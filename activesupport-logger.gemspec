@@ -3,31 +3,21 @@
 # kettle-jem:freeze
 # To retain chunks of comments & code during kettle-jem templating:
 # Wrap custom sections with freeze markers (e.g., as above and below this comment chunk).
+require "logger"
 # kettle-jem will then preserve content between those markers across template runs.
 # kettle-jem:unfreeze
 
-# Loading Version into an anonymous module avoids polluting the global
-# namespace before runtime dependencies are installed on older Rubies too.
-# See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-2630782358
-# See: https://github.com/panorama-ed/memo_wise/pull/397
-gem_version = Module.new.tap do |mod|
-  mod.const_set(:ActiveSupport, Module.new)
-  logger = mod.const_set(:Logger, Class.new)
-  logger.const_set(:Formatter, Class.new)
-  Kernel.load("#{__dir__}/lib/activesupport/logger/version.rb", mod)
-end::ActiveSupport::Logger::SimpleFormatter::Version::VERSION
-
 Gem::Specification.new do |spec|
   spec.name = "activesupport-logger"
-  spec.version = gem_version
+  spec.version = Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/activesupport/logger/version.rb", mod) }::ActiveSupport::Logger::SimpleFormatter::Version::VERSION
   spec.authors = ["Peter Boling"]
   spec.email = ["floss@galtzo.com"]
 
-  spec.summary = "💎 Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 2.7+"
-  spec.description = "💎 Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 2.7+"
+  spec.summary = "💎 Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 3.1+"
+  spec.description = "💎 Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 3.1+"
   spec.homepage = "https://github.com/galtzo-floss/activesupport-logger"
   spec.licenses = ["MIT"]
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.1.0"
 
   # Linux distros often package gems and securely certify them independent
   #   of the official RubyGem certification process. Allowed via ENV["SKIP_GEM_SIGNING"]
@@ -118,17 +108,17 @@ Gem::Specification.new do |spec|
   #       visibility and discoverability.
   #       However, development dependencies in gemspec will install on
   #       all versions of Ruby that will run in CI.
-  #       This gem, and its gemspec runtime dependencies, will install on Ruby down to 2.7.0.
-  #       This gem, and its gemspec development dependencies, will install on Ruby down to 2.7.0.
+  #       This gem, and its gemspec runtime dependencies, will install on Ruby down to 3.1.0.
+  #       This gem, and its gemspec development dependencies, will install on Ruby down to 3.1.0.
   #       Thus, dev dependencies in gemspec must have
   #
-  #       required_ruby_version ">= 2.7.0" (or lower)
+  #       required_ruby_version ">= 3.1.0" (or lower)
   #
   #       Development dependencies that require strictly newer Ruby versions should be in a "gemfile",
   #       and preferably a modular one (see gemfiles/modular/*.gemfile).
 
   # Dev, Test, & Release Tasks
-  spec.add_development_dependency("kettle-dev", "~> 2.5", ">= 2.5.26")             # ruby >= 2.7.0
+  spec.add_development_dependency("kettle-dev", "~> 2.5", ">= 2.5.26")             # ruby >= 3.1.0
 
   # Security
   spec.add_development_dependency("bundler-audit", "~> 0.9.3")                      # ruby >= 2.0.0
@@ -143,7 +133,7 @@ Gem::Specification.new do |spec|
   # Loads version files in anonymous namespaces for coverage without constant redefinition warnings.
   spec.add_development_dependency("anonymous_loader", "~> 0.1", ">= 0.1.3")         # ruby >= 2.2.0
   spec.add_development_dependency("appraisal2", "~> 3.2", ">= 3.2.2")               # ruby >= 1.8.7, for testing against multiple versions of dependencies
-  spec.add_development_dependency("kettle-test", "~> 2.0", ">= 2.0.19")            # ruby >= 2.7.0
+  spec.add_development_dependency("kettle-test", "~> 2.0", ">= 2.0.19")            # ruby >= 3.1.0
   spec.add_development_dependency("turbo_tests2", "~> 3.2", ">= 3.2.5")           # ruby >= 2.4.0, default kettle-test runner
 
   # Releasing

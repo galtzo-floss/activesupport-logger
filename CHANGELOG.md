@@ -22,6 +22,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Drop support for Ruby versions older than 3.1 and use the modern gemspec version-loading pattern.
+
 ### Deprecated
 
 ### Removed

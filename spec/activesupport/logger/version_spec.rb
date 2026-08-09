@@ -1,4 +1,5 @@
 require "anonymous_loader"
+require "logger"
 require "activesupport-logger"
 RSpec.describe ActiveSupport::Logger::SimpleFormatter::Version do
   it_behaves_like "a Version module", described_class
@@ -13,9 +14,8 @@ RSpec.describe ActiveSupport::Logger::SimpleFormatter::Version do
     expect(anonymous_namespace::ActiveSupport::Logger::SimpleFormatter::Version::VERSION).to eq(described_class::VERSION)
   end
 
-  it "loads without the runtime logger dependency for gemspec evaluation" do
+  it "loads after the stdlib logger is available for gemspec evaluation" do
     version_path = File.expand_path("../../../lib/activesupport/logger/version.rb", __dir__)
-    stub_const("Logger", Class.new)
     anonymous_namespace = Module.new
 
     Kernel.load(version_path, anonymous_namespace)
