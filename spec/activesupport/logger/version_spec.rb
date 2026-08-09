@@ -15,7 +15,7 @@ RSpec.describe ActiveSupport::Logger::SimpleFormatter::Version do
 
   it "loads without the runtime logger dependency for gemspec evaluation" do
     version_path = File.expand_path("../../../lib/activesupport/logger/version.rb", __dir__)
-    hide_const("Logger")
+    stub_const("Logger", Class.new)
     anonymous_namespace = Module.new
 
     Kernel.load(version_path, anonymous_namespace)
