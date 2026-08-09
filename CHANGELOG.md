@@ -28,6 +28,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Move gemspec version loading out of the Active Support logger class hierarchy.
+
 ### Security
 
 ## [3.0.0] - 2026-08-09

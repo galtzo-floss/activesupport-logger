@@ -11,16 +11,11 @@ RSpec.describe ActiveSupport::Logger::SimpleFormatter::Version do
     ].select { |path| File.file?(path) }
     anonymous_namespace = AnonymousLoader.load(files: paths)
 
-    expect(anonymous_namespace::ActiveSupport::Logger::SimpleFormatter::Version::VERSION).to eq(described_class::VERSION)
+    expect(anonymous_namespace::ActiveSupport::LoggerVersion::VERSION).to eq(described_class::VERSION)
   end
 
-  it "loads after the stdlib logger is available for gemspec evaluation" do
-    version_path = File.expand_path("../../../lib/activesupport/logger/version.rb", __dir__)
-    anonymous_namespace = Module.new
-
-    Kernel.load(version_path, anonymous_namespace)
-
-    version = anonymous_namespace::ActiveSupport::Logger::SimpleFormatter::Version::VERSION
-    expect(version).to eq(described_class::VERSION)
+  it "re-exports the standalone version module at the public constant" do
+    expect(described_class).to be(ActiveSupport::LoggerVersion)
+    expect(described_class::VERSION).to eq(ActiveSupport::LoggerVersion::VERSION)
   end
 end

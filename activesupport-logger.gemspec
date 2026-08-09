@@ -3,13 +3,12 @@
 # kettle-jem:freeze
 # To retain chunks of comments & code during kettle-jem templating:
 # Wrap custom sections with freeze markers (e.g., as above and below this comment chunk).
-require "logger"
 # kettle-jem will then preserve content between those markers across template runs.
 # kettle-jem:unfreeze
 
 Gem::Specification.new do |spec|
   spec.name = "activesupport-logger"
-  spec.version = Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/activesupport/logger/version.rb", mod) }::ActiveSupport::Logger::SimpleFormatter::Version::VERSION
+  spec.version = Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/activesupport/logger/version.rb", mod) }::ActiveSupport::LoggerVersion::VERSION
   spec.authors = ["Peter Boling"]
   spec.email = ["floss@galtzo.com"]
 

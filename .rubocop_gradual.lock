@@ -1,6 +1,6 @@
 {
-  "activesupport-logger.gemspec:83173254": [
-    [20, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588]
+  "activesupport-logger.gemspec:1367777371": [
+    [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588]
   ],
   "gemfiles/modular/templating.gemfile:155879869": [
     [15, 3, 47, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 11 of the Gemfile.", 3843603197]
@@ -27,7 +27,7 @@
     [26, 16, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
     [39, 16, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361]
   ],
-  "spec/activesupport/logger/version_spec.rb:8372099": [
+  "spec/activesupport/logger/version_spec.rb:3650418737": [
     [4, 1, 62, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/logger/simple_formatter/version*_spec.rb`.", 2471459858]
   ],
   "spec/activesupport/logger_silence_spec.rb:298610873": [
