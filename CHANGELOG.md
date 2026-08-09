@@ -20,6 +20,27 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+- Synchronize LICENSE copyright years with README.md for release validation.
+
+### Security
+
+## [2.0.4] - 2026-08-08
+
+- TAG: [v2.0.4][2.0.4t]
+- COVERAGE: 95.58% -- 108/113 lines in 7 files
+- BRANCH COVERAGE: 84.00% -- 21/25 branches in 7 files
+- 51.72% documented
+
+### Added
+
 - kettle-jem-template-20260720-005 - README Support & Community links now
   include RubyForum.
 - kettle-jem-template-20260726-001 - Projects now include YARD lint
@@ -42,10 +63,6 @@ Please file a bug if you notice a violation of semantic versioning.
   installing the main Gemfile bundle.
 - kettle-jem-template-20260801-001 - Generated README gem dashboard links now
   use ClickGems instead of BestGems.
-
-### Deprecated
-
-### Removed
 
 ### Fixed
 
@@ -96,61 +113,91 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Fix cross-gem README Markdown references before release.
 
-### Security
-
 ## [2.0.3] - 2024-11-22
+
 - COVERAGE:  95.50% -- 106/111 lines in 6 files
 - BRANCH COVERAGE:  84.00% -- 21/25 branches in 6 files
 - 44.83% documented
+
 ### Removed
+
 - rdoc as runtime dependency
+
 ### Changed
+
 - upgrade activesupport-broadcast_logger v2.0.2
 
 ## [2.0.2] - 2024-11-22
+
 - COVERAGE:  95.50% -- 106/111 lines in 6 files
 - BRANCH COVERAGE:  84.00% -- 21/25 branches in 6 files
 - 44.83% documented
+
 ### Added
+
 - rdoc as development dependency
+
 ### Changed
+
 - upgrade activesupport-broadcast_logger v2.0.1
 
 ## [2.0.1] - 2024-11-21
+
 - COVERAGE:  95.50% -- 106/111 lines in 6 files
 - BRANCH COVERAGE:  84.00% -- 21/25 branches in 6 files
 - 44.83% documented
+
 ### Added
+
 - More tests lifted from Rails v8.0 test suite
+
 ### Fixed
+
 - Compatibility with ActiveSupport
   - Many libraries do `require "active_support"`
 
 ## [2.0.0] - 2024-11-21
+
 - COVERAGE:  95.50% -- 106/111 lines in 6 files
 - BRANCH COVERAGE:  84.00% -- 21/25 branches in 6 files
 - 44.83% documented
+
 ### Added
+
 - Tests lifted from Rails v8.0 test suite
 - `ActiveSupport::LoggerSilence`
 - `ActiveSupport::IsolatedExecutionState`
+
 ### Changed
+
 - Now loads even in Rails 8
   - fully replaced logging tooling that ships with all versions of Rails >= v5.2 on Ruby 2.7+
+
 ### Fixed
+
 - Compatibility with Rails > v5.2 and < v7.1
   - proved by Appraisals-based CI matrix covering all supported versions of Rails & Ruby
 
 ## [1.0.1] - 2024-10-10
+
 - COVERAGE:  51.32% -- 39/76 lines in 6 files
 - BRANCH COVERAGE:   5.56% -- 1/18 branches in 6 files
 - 55.56% documented
+
 ### Fixed
+
 - Typo in internal file name (non-breaking, just annoying/confusing)
 
 ## [1.0.0] - 2024-10-10
+
 - COVERAGE:  51.32% -- 39/76 lines in 6 files
 - BRANCH COVERAGE:   5.56% -- 1/18 branches in 6 files
 - 55.56% documented
+
 ### Added
+
 - Initial release
+
+[Unreleased]: https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.4...HEAD
+[2.0.4]: https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.3...v2.0.4
+[2.0.4t]: https://github.com/galtzo-floss/activesupport-logger/releases/tag/v2.0.4
