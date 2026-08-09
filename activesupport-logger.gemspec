@@ -6,8 +6,6 @@
 # kettle-jem will then preserve content between those markers across template runs.
 # kettle-jem:unfreeze
 
-require "logger"
-
 gem_version =
   if Gem.ruby_version >= Gem::Version.new("3.1")
     # Loading Version into an anonymous module allows version.rb to get code coverage from SimpleCov!

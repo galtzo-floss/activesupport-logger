@@ -34,6 +34,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Load Logger before evaluating the gemspec version namespace.
 
+- Load the gemspec version before runtime dependencies are installed.
+
 ### Security
 
 ## [2.0.4] - 2026-08-08
