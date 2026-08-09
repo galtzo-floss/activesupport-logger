@@ -28,16 +28,14 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
-- Move gemspec version loading out of the Active Support logger class hierarchy.
-
 ### Security
 
 ## [3.0.0] - 2026-08-09
 
 - TAG: [v3.0.0][3.0.0t]
-- COVERAGE: 96.00% -- 120/125 lines in 7 files
+- COVERAGE: 95.97% -- 119/124 lines in 7 files
 - BRANCH COVERAGE: 86.21% -- 25/29 branches in 7 files
-- 53.57% documented
+- 44.83% documented
 
 ### Changed
 
@@ -56,6 +54,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - Preserve thread-isolated execution state across enumerators on JRuby.
 
 - Restore cross-gem README links for the Active Support logging family.
+
+- Move gemspec version loading out of the Active Support logger class hierarchy.
 
 ## [2.0.4] - 2026-08-08
 
