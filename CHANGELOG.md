@@ -38,6 +38,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Load the gemspec version before runtime dependencies are installed.
 
+- Preserve thread-isolated execution state across enumerators on JRuby.
+
 ### Security
 
 ## [2.0.4] - 2026-08-08

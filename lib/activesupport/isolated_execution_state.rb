@@ -60,13 +60,29 @@ module ActiveSupport
         # Action Controller streaming spawns a new thread and copy thread locals.
         # We do the same here for backward compatibility, but this is very much a hack
         # and streaming should be rethought.
-        context.active_support_execution_state = other.active_support_execution_state.dup
+        set_state(context, state_for(other).dup)
       end
 
       private
 
       def state
-        context.active_support_execution_state ||= {}
+        state_for(context) || set_state(context, {})
+      end
+
+      def state_for(target)
+        if scope == Thread
+          target.thread_variable_get(:active_support_execution_state)
+        else
+          target.active_support_execution_state
+        end
+      end
+
+      def set_state(target, value)
+        if scope == Thread
+          target.thread_variable_set(:active_support_execution_state, value)
+        else
+          target.active_support_execution_state = value
+        end
       end
     end
 
