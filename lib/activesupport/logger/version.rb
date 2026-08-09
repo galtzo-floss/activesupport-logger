@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module ActiveSupport
-  class Logger
-    class SimpleFormatter
+  class Logger < ::Logger
+    class SimpleFormatter < ::Logger::Formatter
       # Version namespace for this gem.
       module Version
         # Current gem version.

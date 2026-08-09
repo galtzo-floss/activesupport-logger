@@ -32,6 +32,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Fix Ruby 2.7 and 3.0 Active Support logger load-order compatibility.
 
+- Load Logger before evaluating the gemspec version namespace.
+
 ### Security
 
 ## [2.0.4] - 2026-08-08

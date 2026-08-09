@@ -1,14 +1,4 @@
 {
-  "- 44.83% documented\n### Added": [
-    {
-      "file": "CHANGELOG.md",
-      "lines": [
-        111,
-        120,
-        130
-      ]
-    }
-  ],
   "action: remove_modular_gem\nreason: \"The gemspec owns the project's documentation dependency.\"": [
     {
       "file": ".structuredmerge/kettle-jem.yml",

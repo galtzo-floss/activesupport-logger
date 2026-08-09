@@ -44,7 +44,7 @@ supported Rails and Ruby versions.
 
 ### Compatibility
 
-Compatible with MRI Ruby 2.7.0+, and concordant releases of JRuby, and TruffleRuby.
+Compatible with MRI Ruby, JRuby, and TruffleRuby.
 CI workflows and Appraisals are generated for MRI Ruby 2.7.0+.
 This test floor is configured by `ruby.test_minimum` in `.kettle-jem.yml` and
 may be higher than the gem's runtime compatibility floor when legacy Rubies are
@@ -368,9 +368,6 @@ Thanks for RTFM. ☺️
 
 [✇bundle-group-pattern]: https://gist.github.com/pboling/4564780
 [⛳️gem-namespace]: https://github.com/galtzo-floss/activesupport-logger
-[activesupport-logger]: https://github.com/galtzo-floss/activesupport-logger
-[activesupport-broadcast_logger]: https://github.com/galtzo-floss/activesupport-broadcast_logger
-[activesupport-tagged_logging]: https://github.com/galtzo-floss/activesupport-tagged_logging
 [⛳️namespace-img]: https://img.shields.io/badge/namespace-ActiveSupport::Logger::SimpleFormatter-3C2D2D.svg?style=square&logo=ruby&logoColor=white
 [⛳️gem-name]: https://clickgems.clickhouse.com/dashboard/activesupport-logger
 [⛳️name-img]: https://img.shields.io/badge/name-activesupport--logger-3C2D2D.svg?style=square&logo=rubygems&logoColor=red
