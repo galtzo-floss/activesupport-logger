@@ -11,6 +11,7 @@
 # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-2630782358
 # See: https://github.com/panorama-ed/memo_wise/pull/397
 gem_version = Module.new.tap do |mod|
+  mod.const_set(:ActiveSupport, Module.new)
   Kernel.load("#{__dir__}/lib/activesupport/logger/version.rb", mod)
 end::ActiveSupport::Logger::SimpleFormatter::Version::VERSION
 
