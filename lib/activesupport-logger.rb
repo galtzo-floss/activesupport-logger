@@ -1,6 +1,11 @@
 # Ruby stdlib
 require "logger"
 
+# Load this gem's compatibility shim before Active Support can resolve Rails'
+# implementation of active_support/logger. The shim delegates back here and
+# marks the feature as loaded, preventing a later superclass mismatch.
+require "active_support/logger"
+
 # External libraries
 require "active_support/version"
 require "version_gem"

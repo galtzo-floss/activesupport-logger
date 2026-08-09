@@ -1,4 +1,4 @@
-# This is a stub
-# It will prevent vanilla ActiveSupport from loading its own broken logger tooling.
-# Instead, we'll load the fixed replacement logging tooling from this library!
-require_relative "../activesupport-logger"
+# Prevent Active Support from loading its own logger implementation. Loading
+# the implementation through this feature path also keeps Ruby's require
+# tracking consistent when Rails is loaded before or after this gem.
+require_relative "../activesupport/logger"

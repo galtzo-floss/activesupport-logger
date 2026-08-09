@@ -3,6 +3,11 @@
 # Std Lib
 require "logger"
 
+# Active Support prerequisites used by the extracted implementation.
+require "active_support/concern"
+require "active_support/core_ext/module/attribute_accessors"
+require_relative "isolated_execution_state"
+
 # Extracted from Rails v8.0
 require_relative "logger_silence"
 require_relative "logger_thread_safe_level"
