@@ -30,6 +30,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Fix Active Support logger loading across Ruby versions by preserving the active_support/logger feature path.
 
+- Fix Ruby 2.7 and 3.0 Active Support logger load-order compatibility.
+
 ### Security
 
 ## [2.0.4] - 2026-08-08

@@ -55,8 +55,6 @@ module ActiveSupport
       end
     end
 
-    private
-
     def self.normalize_sources(sources)
       sources.map do |source|
         source = source.path if source.respond_to?(:path)
@@ -64,5 +62,7 @@ module ActiveSupport
         source
       end
     end
+
+    private_class_method :normalize_sources
   end
 end
