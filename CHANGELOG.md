@@ -37,33 +37,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - BRANCH COVERAGE: 86.21% -- 25/29 branches in 7 files
 - 48.15% documented
 
-### Changed
-
-- Drop support for Ruby versions older than 3.1 and use the modern gemspec version-loading pattern.
-
-### Fixed
-
-- Fix Active Support logger loading across Ruby versions by preserving the active_support/logger feature path.
-
-- Fix Ruby 2.7 and 3.0 Active Support logger load-order compatibility.
-
-- Load Logger before evaluating the gemspec version namespace.
-
-- Load the gemspec version before runtime dependencies are installed.
-
-- Preserve thread-isolated execution state across enumerators on JRuby.
-
-- Restore cross-gem README links for the Active Support logging family.
-
-- Move gemspec version loading out of the Active Support logger class hierarchy.
-
-## [2.0.4] - 2026-08-08
-
-- TAG: [v2.0.4][2.0.4t]
-- COVERAGE: 95.58% -- 108/113 lines in 7 files
-- BRANCH COVERAGE: 84.00% -- 21/25 branches in 7 files
-- 51.72% documented
-
 ### Added
 
 - kettle-jem-template-20260720-005 - README Support & Community links now
@@ -76,6 +49,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Drop support for Ruby versions older than 3.1 and use the modern gemspec version-loading pattern.
 - kettle-jem-template-20260716-002 - Gemspecs now ship fewer repository-only
   files, reducing package noise for downstream packagers.
 - kettle-jem-template-20260720-002 - Development Gemfiles now use the released
@@ -139,6 +113,20 @@ Please file a bug if you notice a violation of semantic versioning.
 - Fix cross-gem README Markdown references before release.
 
 - Synchronize LICENSE copyright years with README.md for release validation.
+
+- Fix Active Support logger loading across Ruby versions by preserving the active_support/logger feature path.
+
+- Fix Ruby 2.7 and 3.0 Active Support logger load-order compatibility.
+
+- Load Logger before evaluating the gemspec version namespace.
+
+- Load the gemspec version before runtime dependencies are installed.
+
+- Preserve thread-isolated execution state across enumerators on JRuby.
+
+- Restore cross-gem README links for the Active Support logging family.
+
+- Move gemspec version loading out of the Active Support logger class hierarchy.
 
 ## [2.0.3] - 2024-11-22
 
