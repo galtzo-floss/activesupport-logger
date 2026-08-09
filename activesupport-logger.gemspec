@@ -12,6 +12,8 @@
 # See: https://github.com/panorama-ed/memo_wise/pull/397
 gem_version = Module.new.tap do |mod|
   mod.const_set(:ActiveSupport, Module.new)
+  logger = mod.const_set(:Logger, Class.new)
+  logger.const_set(:Formatter, Class.new)
   Kernel.load("#{__dir__}/lib/activesupport/logger/version.rb", mod)
 end::ActiveSupport::Logger::SimpleFormatter::Version::VERSION
 
