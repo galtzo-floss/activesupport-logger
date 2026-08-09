@@ -40,6 +40,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Preserve thread-isolated execution state across enumerators on JRuby.
 
+- Restore cross-gem README links for the Active Support logging family.
+
 ### Security
 
 ## [2.0.4] - 2026-08-08
