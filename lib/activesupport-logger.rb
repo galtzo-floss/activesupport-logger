@@ -46,6 +46,6 @@ require_relative "activesupport/logger_silence"
 require_relative "activesupport/logger"
 require_relative "activesupport/logger/version"
 
-ActiveSupport::LoggerVersion.class_eval do
+ActiveSupport::Logger::SimpleFormatter::Version.class_eval do
   extend VersionGem::Basic
 end

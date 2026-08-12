@@ -1,5 +1,5 @@
 {
-  "activesupport-logger.gemspec:1367777371": [
+  "activesupport-logger.gemspec:2188675463": [
     [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588]
   ],
   "gemfiles/modular/templating.gemfile:155879869": [

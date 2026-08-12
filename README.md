@@ -43,7 +43,7 @@ supported Rails and Ruby versions.
 
 ### Compatibility
 
-Compatible with MRI Ruby, JRuby, and TruffleRuby.
+Compatible with MRI Ruby 3.1.0+, JRuby, and TruffleRuby.
 CI workflows and Appraisals are generated for MRI Ruby 3.1.0+.
 This test floor is configured by `ruby.test_minimum` in `.kettle-jem.yml` and
 may be higher than the gem's runtime compatibility floor when legacy Rubies are
@@ -214,8 +214,7 @@ See [SECURITY.md][🔐security].
 ## 🤝 Contributing
 
 If you need some ideas of where to help, you could work on adding more code coverage,
-or if it is already 💯 (see [below](#code-coverage)) check [issues][🤝gh-issues] or [PRs][🤝gh-pulls],
-or use the gem and think about how it could be better.
+check [issues][🤝gh-issues] or [PRs][🤝gh-pulls], or use the gem and think about how it could be better.
 
 We [![Keep A Changelog][📗keep-changelog-img]][📗keep-changelog] so if you make changes, remember to update it.
 
@@ -251,19 +250,6 @@ Made with [contributors-img][🖐contrib-rocks].
 
 Also see GitLab Contributors: [https://gitlab.com/galtzo-floss/activesupport-logger/-/graphs/main][🚎contributors-gl]
 
-<details markdown="1">
- <summary>⭐️ Star History</summary>
-
-<a href="https://star-history.com/galtzo-floss/activesupport-logger&Date">
- <picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=galtzo-floss/activesupport-logger&type=Date&theme=dark" />
- <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=galtzo-floss/activesupport-logger&type=Date" />
- <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=galtzo-floss/activesupport-logger&type=Date" />
- </picture>
-</a>
-
-</details>
-
 ## 📌 Versioning
 
 This library follows [![Semantic Versioning 2.0.0][📌semver-img]][📌semver] for its public API where practical.
@@ -272,7 +258,7 @@ For most applications, prefer the [Pessimistic Version Constraint][📌pvc] with
 For example:
 
 ```ruby
-spec.add_dependency("activesupport-logger", "~> 2.0")
+spec.add_dependency("activesupport-logger", "~> 3.0")
 ```
 
 <details markdown="1">
@@ -367,9 +353,6 @@ Thanks for RTFM. ☺️
 
 [✇bundle-group-pattern]: https://gist.github.com/pboling/4564780
 [⛳️gem-namespace]: https://github.com/galtzo-floss/activesupport-logger
-[activesupport-logger]: https://github.com/galtzo-floss/activesupport-logger
-[activesupport-broadcast_logger]: https://github.com/galtzo-floss/activesupport-broadcast_logger
-[activesupport-tagged_logging]: https://github.com/galtzo-floss/activesupport-tagged_logging
 [⛳️namespace-img]: https://img.shields.io/badge/namespace-ActiveSupport::Logger::SimpleFormatter-3C2D2D.svg?style=square&logo=ruby&logoColor=white
 [⛳️gem-name]: https://clickgems.clickhouse.com/dashboard/activesupport-logger
 [⛳️name-img]: https://img.shields.io/badge/name-activesupport--logger-3C2D2D.svg?style=square&logo=rubygems&logoColor=red
