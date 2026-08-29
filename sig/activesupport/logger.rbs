@@ -13,21 +13,10 @@ module ActiveSupport
     VERSION: String
   end
   VERSION: String
-  module Logger
-    module SimpleFormatter
-      module Version
-        VERSION: String
-      end
-      VERSION: String
-    end
-
+  class Logger < ::Logger
     module Version
       VERSION: String
     end
-    VERSION: String
-  end
-
-  module LoggerVersion
     VERSION: String
   end
 end

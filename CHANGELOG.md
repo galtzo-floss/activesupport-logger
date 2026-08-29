@@ -40,6 +40,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Load the ActiveSupport::Logger version namespace before applying VersionGem enhancements.
+
 ### Security
 
 ## [3.0.0] - 2026-08-09
