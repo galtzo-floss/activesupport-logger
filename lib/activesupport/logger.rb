@@ -66,3 +66,11 @@ module ActiveSupport
     private_class_method :normalize_sources
   end
 end
+
+require "version_gem"
+
+require_relative "logger/version"
+
+ActiveSupport::Logger::Version.class_eval do
+  extend VersionGem::Basic
+end

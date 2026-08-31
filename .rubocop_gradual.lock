@@ -1,5 +1,5 @@
 {
-  "activesupport-logger.gemspec:238819924": [
+  "activesupport-logger.gemspec:684415412": [
     [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588]
   ],
   "lib/activesupport/isolated_execution_state.rb:796719960": [
@@ -23,6 +23,9 @@
     [5, 1, 52, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/isolated_execution_state*_spec.rb`.", 2500898234],
     [26, 16, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
     [39, 16, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361]
+  ],
+  "spec/activesupport/logger/version_spec.rb:1820515078": [
+    [12, 12, 30, "RSpec/DescribedClass: Use `described_class` instead of `ActiveSupport::Logger::Version`.", 39115528]
   ],
   "spec/activesupport/logger_silence_spec.rb:298610873": [
     [3, 1, 43, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/logger_silence*_spec.rb`.", 1277887133],
