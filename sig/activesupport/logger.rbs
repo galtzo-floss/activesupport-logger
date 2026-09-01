@@ -19,11 +19,4 @@ module ActiveSupport
     end
     VERSION: String
   end
-
-  module Logger
-    module Version
-      VERSION: String
-    end
-    VERSION: String
-  end
 end
