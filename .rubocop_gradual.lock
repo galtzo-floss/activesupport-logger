@@ -1,12 +1,35 @@
 {
-  "activesupport-logger.gemspec:2274183095": [
-    [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588]
+  "activesupport-logger.gemspec:520049282": [
+    [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588],
+    [43, 78, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002],
+    [46, 71, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002],
+    [84, 13, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002]
+  ],
+  "gemfiles/modular/coverage_local.gemfile:2661471746": [
+    [19, 27, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002],
+    [37, 101, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002],
+    [49, 31, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002]
+  ],
+  "gemfiles/modular/documentation_local.gemfile:3227795705": [
+    [19, 27, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002]
+  ],
+  "gemfiles/modular/style_local.gemfile:1028357962": [
+    [22, 27, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002]
+  ],
+  "gemfiles/modular/templating_local.gemfile:1318235891": [
+    [20, 27, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002],
+    [85, 101, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002],
+    [97, 31, 4, "Lint/LtsRuby/UnavailableMethod: Symbol#name is unavailable before Ruby 3.0.", 2087876002]
   ],
   "lib/activesupport/isolated_execution_state.rb:796719960": [
     [14, 28, 16, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 430180392],
     [20, 18, 16, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 430180392],
     [22, 9, 6, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 2771743759],
     [28, 9, 16, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 430180392]
+  ],
+  "lib/activesupport/logger.rb:488191260": [
+    [42, 34, 10, "Lint/LtsRuby/UnavailableMethod: Array#intersect? is unavailable before Ruby 3.1.", 3407995039],
+    [60, 25, 4, "Lint/LtsRuby/UnavailableMethod: IO/SyntaxError#path is unavailable before Ruby 3.2.", 2088095368]
   ],
   "lib/activesupport/logger_silence.rb:1739415277": [
     [13, 7, 39, "ThreadSafety/ClassAndModuleAttributes: Avoid mutating class and module attributes.", 4013179979]
@@ -43,10 +66,19 @@
     [47, 59, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
     [49, 45, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
     [50, 55, 6, "Style/GlobalStdStream: Use `$stderr` instead of `STDERR`.", 3356712163],
+    [55, 71, 4, "Lint/LtsRuby/UnavailableMethod: IO/SyntaxError#path is unavailable before Ruby 3.2.", 2088095368],
+    [58, 57, 4, "Lint/LtsRuby/UnavailableMethod: IO/SyntaxError#path is unavailable before Ruby 3.2.", 2088095368],
+    [59, 80, 4, "Lint/LtsRuby/UnavailableMethod: IO/SyntaxError#path is unavailable before Ruby 3.2.", 2088095368],
+    [59, 108, 4, "Lint/LtsRuby/UnavailableMethod: IO/SyntaxError#path is unavailable before Ruby 3.2.", 2088095368],
     [61, 59, 6, "Style/GlobalStdStream: Use `$stdout` instead of `STDOUT`.", 3356722952],
+    [73, 21, 4, "Lint/LtsRuby/UnavailableMethod: IO/SyntaxError#path is unavailable before Ruby 3.2.", 2088095368],
     [157, 3, 220, "RSpec/NoExpectationExample: No expectation found in this example.", 2483096172],
     [170, 3, 344, "RSpec/NoExpectationExample: No expectation found in this example.", 4268698866],
     [278, 9, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
+    [290, 7, 4, "Lint/LtsRuby/UnavailableMethod: Set#join is unavailable before Ruby 3.0.", 2088000679],
     [301, 7, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361]
+  ],
+  "spec/support/helpers/multibyte_test_helpers.rb:1152603848": [
+    [11, 52, 4, "Lint/LtsRuby/UnavailableMethod: Set#join is unavailable before Ruby 3.0.", 2088000679]
   ]
 }
