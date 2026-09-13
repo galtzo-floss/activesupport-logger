@@ -34,7 +34,9 @@ RSpec.describe ActiveSupport::Logger do
   end
 
   it "log_outputs_to_with_a_broadcast_logger" do
-    pending_for(engine: "truffleruby", reason: "Unclear why it is failing on truffleruby")
+    # Fails on some TruffleRuby/ActiveSupport combinations but passes on others (e.g. TruffleRuby 23.1
+    # with ActiveSupport 7.1), so skip rather than pend, which errors when the example unexpectedly passes.
+    skip_for(engine: "truffleruby", reason: "Unclear why it is failing on truffleruby")
     logger = ActiveSupport::BroadcastLogger.new(described_class.new(STDOUT))
 
     assert(described_class.logger_outputs_to?(logger, STDOUT))
