@@ -70,7 +70,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 and <a href="https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html">yes</a>, platform and engine support are part of the <a href="https://github.com/semver/semver/issues/716#issuecomment-869336139">public API</a>.<br>
 Please file a bug if you notice a violation of semantic versioning.</p>
 
-<h2 id="unreleased"><a href="https://github.com/galtzo-floss/activesupport-logger/compare/v3.0.0...HEAD">Unreleased</a></h2>
+<h2 id="unreleased"><a href="https://github.com/galtzo-floss/activesupport-logger/compare/v3.0.1...HEAD">Unreleased</a></h2>
 
 <h3 id="added">Added</h3>
 
@@ -84,6 +84,53 @@ Please file a bug if you notice a violation of semantic versioning.</p>
 
 <h3 id="security">Security</h3>
 
+<h2 id="301---2026-10-01">
+<a href="https://github.com/galtzo-floss/activesupport-logger/compare/v3.0.0...v3.0.1">3.0.1</a> - 2026-10-01</h2>
+
+<ul>
+  <li>TAG: <a href="https://github.com/galtzo-floss/activesupport-logger/releases/tag/v3.0.1">v3.0.1</a>
+</li>
+  <li>COVERAGE: 96.09% – 123/128 lines in 7 files</li>
+  <li>BRANCH COVERAGE: 86.21% – 25/29 branches in 7 files</li>
+  <li>53.57% documented</li>
+</ul>
+
+<h3 id="added-1">Added</h3>
+
+<ul>
+  <li>kettle-jem-template-20260913-001 - Templating now also surfaces a review<br>
+entry in <code>dependency_conflicts.resolve</code> when a direct development<br>
+dependency doesn’t support one or more of this project’s declared<br>
+<code>engines:</code> and has no template-managed modular home (e.g. <code>sqlite3</code> on<br>
+<code>jruby</code>). Review each entry and pick a resolution per the project’s own<br>
+engine support needs.</li>
+</ul>
+
+<h3 id="changed-1">Changed</h3>
+
+<ul>
+  <li>[kc] kettle-jem/prepare: updated 14 project files:
+    <ul>
+      <li>dependencies (14)</li>
+    </ul>
+  </li>
+  <li>[kc] kettle-jem/template: updated 32 project files:
+    <ul>
+      <li>code and tests (1)</li>
+      <li>dependencies (6)</li>
+      <li>documentation (1)</li>
+      <li>other (3)</li>
+      <li>workflows (21)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="fixed-1">Fixed</h3>
+
+<ul>
+  <li>Load the ActiveSupport::Logger version namespace before applying VersionGem enhancements.</li>
+</ul>
+
 <h2 id="300---2026-08-09">
 <a href="https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.4...v3.0.0">3.0.0</a> - 2026-08-09</h2>
 
@@ -95,7 +142,7 @@ Please file a bug if you notice a violation of semantic versioning.</p>
   <li>48.15% documented</li>
 </ul>
 
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 
 <ul>
   <li>kettle-jem-template-20260720-005 - README Support &amp; Community links now<br>
@@ -107,7 +154,7 @@ before generated docs are refreshed.</li>
 RSpec helpers provided by <code>kettle-test</code>.</li>
 </ul>
 
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 
 <ul>
   <li>Drop support for Ruby versions older than 3.1 and use the modern gemspec version-loading pattern.</li>
@@ -125,7 +172,7 @@ installing the main Gemfile bundle.</li>
 use ClickGems instead of BestGems.</li>
 </ul>
 
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="fixed-2">Fixed</h3>
 
 <ul>
   <li>kettle-jem-template-20260720-003 - StructuredMerge Git diff driver config now<br>
@@ -219,7 +266,7 @@ preserving comments and trailing commas during template updates.</p>
   <li>rdoc as runtime dependency</li>
 </ul>
 
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 
 <ul>
   <li>upgrade activesupport-broadcast_logger v2.0.2</li>
@@ -233,13 +280,13 @@ preserving comments and trailing commas during template updates.</p>
   <li>44.83% documented</li>
 </ul>
 
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 
 <ul>
   <li>rdoc as development dependency</li>
 </ul>
 
-<h3 id="changed-3">Changed</h3>
+<h3 id="changed-4">Changed</h3>
 
 <ul>
   <li>upgrade activesupport-broadcast_logger v2.0.1</li>
@@ -253,13 +300,13 @@ preserving comments and trailing commas during template updates.</p>
   <li>44.83% documented</li>
 </ul>
 
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 
 <ul>
   <li>More tests lifted from Rails v8.0 test suite</li>
 </ul>
 
-<h3 id="fixed-2">Fixed</h3>
+<h3 id="fixed-3">Fixed</h3>
 
 <ul>
   <li>Compatibility with ActiveSupport
@@ -278,7 +325,7 @@ preserving comments and trailing commas during template updates.</p>
   <li>44.83% documented</li>
 </ul>
 
-<h3 id="added-4">Added</h3>
+<h3 id="added-5">Added</h3>
 
 <ul>
   <li>Tests lifted from Rails v8.0 test suite</li>
@@ -286,7 +333,7 @@ preserving comments and trailing commas during template updates.</p>
   <li><code>ActiveSupport::IsolatedExecutionState</code></li>
 </ul>
 
-<h3 id="changed-4">Changed</h3>
+<h3 id="changed-5">Changed</h3>
 
 <ul>
   <li>Now loads even in Rails 8
@@ -296,7 +343,7 @@ preserving comments and trailing commas during template updates.</p>
   </li>
 </ul>
 
-<h3 id="fixed-3">Fixed</h3>
+<h3 id="fixed-4">Fixed</h3>
 
 <ul>
   <li>Compatibility with Rails &gt; v5.2 and &lt; v7.1
@@ -314,7 +361,7 @@ preserving comments and trailing commas during template updates.</p>
   <li>55.56% documented</li>
 </ul>
 
-<h3 id="fixed-4">Fixed</h3>
+<h3 id="fixed-5">Fixed</h3>
 
 <ul>
   <li>Typo in internal file name (non-breaking, just annoying/confusing)</li>
@@ -328,7 +375,7 @@ preserving comments and trailing commas during template updates.</p>
   <li>55.56% documented</li>
 </ul>
 
-<h3 id="added-5">Added</h3>
+<h3 id="added-6">Added</h3>
 
 <ul>
   <li>Initial release</li>

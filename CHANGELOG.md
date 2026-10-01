@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [3.0.1] - 2026-10-01
+
+- TAG: [v3.0.1][3.0.1t]
+- COVERAGE: 96.09% -- 123/128 lines in 7 files
+- BRANCH COVERAGE: 86.21% -- 25/29 branches in 7 files
+- 53.57% documented
+
+### Added
+
 - kettle-jem-template-20260913-001 - Templating now also surfaces a review
   entry in `dependency_conflicts.resolve` when a direct development
   dependency doesn't support one or more of this project's declared
@@ -39,15 +58,9 @@ Please file a bug if you notice a violation of semantic versioning.
   - other (3)
   - workflows (21)
 
-### Deprecated
-
-### Removed
-
 ### Fixed
 
 - Load the ActiveSupport::Logger version namespace before applying VersionGem enhancements.
-
-### Security
 
 ## [3.0.0] - 2026-08-09
 
@@ -232,7 +245,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Initial release
 
-[Unreleased]: https://github.com/galtzo-floss/activesupport-logger/compare/v3.0.0...HEAD
+[Unreleased]: https://github.com/galtzo-floss/activesupport-logger/compare/v3.0.1...HEAD
+[3.0.1]: https://github.com/galtzo-floss/activesupport-logger/compare/v3.0.0...v3.0.1
+[3.0.1t]: https://github.com/galtzo-floss/activesupport-logger/releases/tag/v3.0.1
 [3.0.0]: https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.4...v3.0.0
 [3.0.0t]: https://github.com/galtzo-floss/activesupport-logger/releases/tag/v3.0.0
 [2.0.4]: https://github.com/galtzo-floss/activesupport-logger/compare/v2.0.3...v2.0.4
