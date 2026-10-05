@@ -119,8 +119,8 @@ dependency_conflicts:
     - gem: rubocop-packaging
       direct: activesupport-logger.gemspec
       modular: gemfiles/modular/style.gemfile
-      action: remove_modular_gem
-      reason: "The gemspec owns the project's style dependency."
+      action: keep_both
+      reason: "The gemspec constrains the compatible version; the modular declaration selects the required fork source."
     - gem: yard
       direct: activesupport-logger.gemspec
       modular: gemfiles/modular/documentation.gemfile
