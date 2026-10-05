@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/pboling/rubocop-packaging.git
+  revision: 3539ba858d379740d638566faee9e56b2b854145
+  ref: 3539ba858d379740d638566faee9e56b2b854145
+  specs:
+    rubocop-packaging (0.6.0)
+      lint_roller (~> 1.1.0)
+      rubocop (>= 1.72.1, < 2.0)
+
 PATH
   remote: .
   specs:
@@ -646,9 +655,6 @@ GEM
       lint_roller (~> 1.1)
       rbs (~> 4.0)
       rubocop (>= 1.72.1, < 2.0)
-    rubocop-packaging (0.6.0)
-      lint_roller (~> 1.1.0)
-      rubocop (>= 1.72.1, < 2.0)
     rubocop-performance (1.26.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
@@ -851,7 +857,7 @@ DEPENDENCIES
   rubocop-lts-rspec (~> 1.0, >= 1.0.7)
   rubocop-minitest (~> 0.40, >= 0.40.0)
   rubocop-on-rbs (~> 2.2, >= 2.2.0)
-  rubocop-packaging (~> 0.5, >= 0.5.2)
+  rubocop-packaging (~> 0.5, >= 0.5.2, >= 0)!
   rubocop-ruby3_1 (~> 3.0, >= 3.0.7)
   ruby-merge!
   ruby-progressbar (~> 1.13)
