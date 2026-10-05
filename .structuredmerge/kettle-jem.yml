@@ -121,6 +121,11 @@ dependency_conflicts:
       modular: gemfiles/modular/style.gemfile
       action: keep_both
       reason: "The gemspec constrains the compatible version; the modular declaration selects the required fork source."
+    - gem: rubocop-packaging
+      direct: activesupport-logger.gemspec
+      modular: gemfiles/modular/style_local.gemfile
+      action: keep_both
+      reason: "The gemspec constrains the compatible version; the local modular declaration selects the required fork source."
     - gem: yard
       direct: activesupport-logger.gemspec
       modular: gemfiles/modular/documentation.gemfile
