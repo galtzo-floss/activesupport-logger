@@ -809,7 +809,7 @@ files:
     recipe: template_source_application_gemfiles_modular_documentation_gemfile
     action: write
     dest_sha256: aa27f5b1f8bcccfc9e92c13e7f40cae73a9ae0f58df872a328a16da2d61b9f40
-    input_fingerprint: 1df9064d4f3f89cd8ea6ea762696211e1c438e0a864c1b73960fb65c40d0c7ce
+    input_fingerprint: b23ee0386b30eea64e8007e3ae79f08a8d0563f467c6105d53b05bdbf46cf095
     template_sources:
     - gemfiles/modular/documentation.gemfile.example
   gemfiles/modular/documentation_local.gemfile:

@@ -3,8 +3,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        119,
-        124
+        114,
+        119
       ]
     }
   ],
@@ -17,15 +17,6 @@
       ]
     }
   ],
-  "action: remove_modular_gem\nreason: \"The gemspec owns the project's documentation dependency.\"": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        112,
-        132
-      ]
-    }
-  ],
   "config: .licenserc.yaml\nmode: \"check\"": [
     {
       "file": ".github/workflows/license-eye.yml",
@@ -35,21 +26,12 @@
       ]
     }
   ],
-  "direct: activesupport-logger.gemspec\nmodular: gemfiles/modular/documentation.gemfile": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        110,
-        130
-      ]
-    }
-  ],
   "direct: activesupport-logger.gemspec\nmodular: gemfiles/modular/style.gemfile": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        115,
-        120
+        110,
+        115
       ]
     }
   ],
@@ -59,15 +41,6 @@
       "lines": [
         43,
         49
-      ]
-    }
-  ],
-  "modular: gemfiles/modular/documentation.gemfile\naction: remove_modular_gem": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        111,
-        131
       ]
     }
   ]
