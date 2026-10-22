@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Peter H. Boling"]
   spec.email = ["floss@galtzo.com"]
 
-  spec.summary = "💎 Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 3.1+"
-  spec.description = "💎 Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 3.1+"
+  spec.summary = "🪵 Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 3.1+"
+  spec.description = "🪵 Rails v8 ActiveSupport::Logger backported to Rails v5.2+ & Ruby 3.1+"
   spec.homepage = "https://github.com/galtzo-floss/activesupport-logger"
   spec.licenses = ["MIT"]
   spec.required_ruby_version = ">= 3.1.0"
