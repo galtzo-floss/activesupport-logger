@@ -1,9 +1,6 @@
 {
-  "activesupport-logger.gemspec:578831618": [
+  "activesupport-logger.gemspec:3788554755": [
     [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588]
-  ],
-  "gemfiles/modular/style_local.gemfile:1858046555": [
-    [71, 23, 20, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 1851388465]
   ],
   "lib/activesupport/isolated_execution_state.rb:796719960": [
     [14, 28, 16, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 430180392],
